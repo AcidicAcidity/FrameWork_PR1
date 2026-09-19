@@ -46,22 +46,15 @@ def create_trip(user: str, car: str, hours: int) -> str:
 
 # Функция 5: Полный вывод информации о поездке
 def display_trip(user, car, owner, hours, price, trip_date):
-    """Выводит полностью оформленную карточку поездки."""
-    print("\n" + "=" * 55)
     print("            СИСТЕМА КАРШЕРИНГА — КАРТОЧКА ПОЕЗДКИ")
-    print("=" * 55)
     print(f"ДАТА ПОЕЗДКИ : {trip_date}")
     print(f"ПОЛЬЗОВАТЕЛЬ : {user}")
     print(f"АВТОМОБИЛЬ   : {car}")
     print(f"ВЛАДЕЛЕЦ     : {owner}")
     print(f"ДЛИТЕЛЬНОСТЬ : {hours} ч.")
-    print("-" * 55)
     print(f"СТОИМОСТЬ    : {price}")
-    print("=" * 55)
 
-print("=" * 55)
 print("     СИСТЕМА СОВМЕСТНОГО ИСПОЛЬЗОВАНИЯ АВТОМОБИЛЕЙ")
-print("=" * 55)
 
 # 1. Ввод данных пользователем
 owner = input("Введите имя владельца автомобиля: ")
